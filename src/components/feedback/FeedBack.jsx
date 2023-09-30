@@ -1,8 +1,9 @@
+import React from 'react';
 import styles from './FeedBack.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <ul>
+    <ul className={styles.bntul}>
       {options.map(option => (
         <li key={option}>
           <button
